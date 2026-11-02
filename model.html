@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>3D Models</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <svg class="brand-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.5 3.5 7v10L12 21.5 20.5 17V7L12 2.5Z"/><path d="M3.5 7 12 11.5 20.5 7M12 11.5v10"/></svg>
+        <span data-site-title>3D Models</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <a class="back" href="index.html">← All models</a>
+
+    <div id="model" class="model-layout">
+      <section>
+        <div id="viewer" class="viewer">
+          <div id="viewer-status" class="viewer-status">Loading…</div>
+          <div id="viewer-info" class="viewer-info"></div>
+          <div class="viewer-controls">
+            <button id="rotate" class="icon-btn" type="button" aria-pressed="false">Auto-rotate</button>
+            <button id="reset" class="icon-btn" type="button">Reset view</button>
+          </div>
+        </div>
+        <p class="hint">Drag to rotate · scroll or pinch to zoom · right-drag to pan</p>
+      </section>
+
+      <section id="info" class="model-info"></section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">Dimensions are read from the STL file, in millimetres.</div>
+  </footer>
+
+  <script type="module" src="assets/js/model.js"></script>
+</body>
+</html>

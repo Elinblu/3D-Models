@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>3D Models</title>
+  <meta name="description" content="Free STL files for 3D printing.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <svg class="brand-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.5 3.5 7v10L12 21.5 20.5 17V7L12 2.5Z"/><path d="M3.5 7 12 11.5 20.5 7M12 11.5v10"/></svg>
+        <span data-site-title>3D Models</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <h1 data-site-title>3D Models</h1>
+      <p id="site-description"></p>
+    </section>
+
+    <div class="toolbar">
+      <input id="search" class="search" type="search" placeholder="Search models…" aria-label="Search models">
+      <div id="tags" class="tags" role="group" aria-label="Filter by tag"></div>
+    </div>
+
+    <div id="grid" class="grid" aria-live="polite"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">Click a model to preview it in 3D and download the STL files.</div>
+  </footer>
+
+  <script type="module" src="assets/js/catalog.js"></script>
+</body>
+</html>

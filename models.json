@@ -1,0 +1,26 @@
+{
+  "site": {
+    "title": "3D Models",
+    "description": "Free 3D-printable models. Preview them in 3D, customize them right in the browser, and download STL or 3MF files.",
+    "bambu": {
+      "label": "Bambu X2D",
+      "profile": "assets/bambu/x2d-profile.json"
+    }
+  },
+  "models": [
+    {
+      "id": "reading-sign",
+      "title": "Reading Tracker Sign",
+      "description": "An arched sign for keeping count of the books and mangas you've read, with swappable number tiles that hang on pegs. It slots into a base with two drawers.\n\nUse the customizer to pick the version (books and manga, or books only), the theme, the title and the sizes. Then choose a part, and download it as STL or 3MF. The 3MF keeps each colour as a separate part, ready for a multi-colour printer.",
+      "tags": ["customizable", "books", "sign", "multicolour"],
+      "added": "2026-11-02",
+      "scad": "reading_sign.scad",
+      "image": "preview.png",
+      "print": {
+        "Colours": "Dark body + gold details",
+        "Single-colour printer": "Change filament at the top of the panel (4 mm with default settings)",
+        "Large panel": "Use the panel_bottom, panel_top and splice_plate parts if it doesn't fit your bed"
+      }
+    }
+  ]
+}
